@@ -11,56 +11,55 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_role")
-public class Role implements Serializable{
-	private static final long serialVersionUID = 1L;
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	private String authority;
-	
-	public Role() {
-	}
+public class Role implements Serializable {
+    private static final long serialVersionUID = 1L;
 
-	public Role(Long id, String authority) {
-		super();
-		this.id = id;
-		this.authority = authority;
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String authority;
 
-	public Long getId() {
-		return id;
-	}
+    public Role() {
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public Role(Long id, String authority) {
+        super();
+        this.id = id;
+        this.authority = authority;
+    }
 
-	public String getAuthority() {
-		return authority;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setAuthority(String authority) {
-		this.authority = authority;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(id);
-	}
+    public String getAuthority() {
+        return authority;
+    }
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Role other = (Role) obj;
-		return Objects.equals(id, other.id);
-	}
-	
-	
+    public void setAuthority(String authority) {
+        this.authority = authority;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Role other = (Role) obj;
+        return Objects.equals(id, other.id);
+    }
+
 
 }

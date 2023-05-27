@@ -15,44 +15,45 @@ import com.project_java.dscatalog.tests.Factory;
 @DataJpaTest
 public class ProductRepositoryTests {
 
-	@Autowired
-	private ProductRepository repository;
+    @Autowired
+    private ProductRepository repository;
 
-	private long exintingId;
-	private long nonExintingId;
-	private long countTotalProducts;
+    private long exintingId;
+    private long nonExintingId;
+    private long countTotalProducts;
 
-	@BeforeEach
-	void setUp() throws Exception {
-		exintingId = 1L;
-		nonExintingId = 1000L;
-		countTotalProducts = 25L;
-	}
-	@Test
-	public void saveShouldPersistWithAutoincrementWhenIdIsNull() {
+    @BeforeEach
+    void setUp() throws Exception {
+        exintingId = 1L;
+        nonExintingId = 1000L;
+        countTotalProducts = 25L;
+    }
 
-		Product product = Factory.createProduct();
-		product.setId(null);
-		product = repository.save(product);
-		Assertions.assertNotNull(product.getId());
-		Assertions.assertEquals(countTotalProducts + 1,product.getId());
-	}
-	
-	
-	@Test
-	public void deleteShouldDeleteObjectWhenIdExits() {
+    @Test
+    public void saveShouldPersistWithAutoincrementWhenIdIsNull() {
 
-		repository.deleteById(exintingId);
-		Optional<Product> result = repository.findById(exintingId);
-		Assertions.assertFalse(result.isPresent());
-	}
+        Product product = Factory.createProduct();
+        product.setId(null);
+        product = repository.save(product);
+        Assertions.assertNotNull(product.getId());
+        Assertions.assertEquals(countTotalProducts + 1, product.getId());
+    }
 
-	@Test
-	public void deleteShouldThrowEmptyResultDataAccessExceptionWhenIdDoesNotExits() {
 
-		Assertions.assertThrows(EmptyResultDataAccessException.class, () -> {
-			repository.deleteById(nonExintingId);
-		});
+    @Test
+    public void deleteShouldDeleteObjectWhenIdExits() {
 
-	}
+        repository.deleteById(exintingId);
+        Optional<Product> result = repository.findById(exintingId);
+        Assertions.assertFalse(result.isPresent());
+    }
+
+    @Test
+    public void deleteShouldThrowEmptyResultDataAccessExceptionWhenIdDoesNotExits() {
+
+        Assertions.assertThrows(EmptyResultDataAccessException.class, () -> {
+            repository.deleteById(nonExintingId);
+        });
+
+    }
 }
