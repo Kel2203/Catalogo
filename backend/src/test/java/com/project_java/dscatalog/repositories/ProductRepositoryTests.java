@@ -18,14 +18,14 @@ public class ProductRepositoryTests {
     @Autowired
     private ProductRepository repository;
 
-    private long exintingId;
-    private long nonExintingId;
+    private long existingId;
+    private long nonExistingId;
     private long countTotalProducts;
 
     @BeforeEach
     void setUp() throws Exception {
-        exintingId = 1L;
-        nonExintingId = 1000L;
+        existingId = 1L;
+        nonExistingId = 1000L;
         countTotalProducts = 25L;
     }
 
@@ -34,26 +34,31 @@ public class ProductRepositoryTests {
 
         Product product = Factory.createProduct();
         product.setId(null);
+
         product = repository.save(product);
+        Optional<Product> result = repository.findById(product.getId());
+
         Assertions.assertNotNull(product.getId());
-        Assertions.assertEquals(countTotalProducts + 1, product.getId());
+        Assertions.assertEquals(countTotalProducts + 1L, product.getId());
+        Assertions.assertTrue(result.isPresent());
+        Assertions.assertSame(result.get(), product);
     }
 
-
     @Test
-    public void deleteShouldDeleteObjectWhenIdExits() {
+    public void deleteShouldDeleteObjectWhenIdExists() {
 
-        repository.deleteById(exintingId);
-        Optional<Product> result = repository.findById(exintingId);
+        repository.deleteById(existingId);
+
+        Optional<Product> result = repository.findById(existingId);
+
         Assertions.assertFalse(result.isPresent());
     }
 
     @Test
-    public void deleteShouldThrowEmptyResultDataAccessExceptionWhenIdDoesNotExits() {
+    public void deleteShouldThrowEmptyResultDataAccessExceptionWhenIdDoesNotExist() {
 
         Assertions.assertThrows(EmptyResultDataAccessException.class, () -> {
-            repository.deleteById(nonExintingId);
+            repository.deleteById(nonExistingId);
         });
-
     }
 }
