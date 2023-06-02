@@ -1,29 +1,34 @@
-
-import{ReactComponent as MainImage} from 'assets/images/main-image.svg';
-import ButtonIcon from "components/ButtonIcon";
-import Navbar from "components/Navbar";
-
+import { ReactComponent as MainImage } from 'assets/images/main-image.svg';
+import ButtonIcon from 'components/ButtonIcon';
+import { Link } from 'react-router-dom';
 import './styles.css';
-const Home = ()  =>{
-    return (
-      <>
-      <Navbar />
-      <div className="home-container">
-        <div className="home-card">
+const Home = () => {
+  return (
+    <div className="home-container">
+      <div className="base-card home-card">
         <div className="home-content-container">
-            <h1 className="home-title">Conheça o melhor catálogo de produtos</h1>
-            <p>Ajudaremos você a encontrar os melhores produtos disponíveis no mercado.</p>
+          <div>
+            <h1 className="home-title">
+              Conheça o melhor catálogo de produtos
+            </h1>
+            <p>
+              Ajudaremos você a encontrar os melhores produtos disponíveis no
+              mercado.
+            </p>
+          </div>
+          <div>
+          <Link to="/products">
             <ButtonIcon />
+          </Link>
+          </div>
+          
         </div>
         <div className="home-image-container">
-            <MainImage />
+          <MainImage />
         </div>
-        </div>
-
       </div>
-      </>
-    
-    );
-  }
-  
-  export default Home;
+    </div>
+  );
+};
+
+export default Home;
