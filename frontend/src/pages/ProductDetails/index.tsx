@@ -1,66 +1,71 @@
 import { ReactComponent as ArrowIcon } from 'assets/images/arrow.svg';
 import ProductPrice from 'components/ProductPrice';
 import './styles.css';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import axios from 'axios';
+import { Product } from 'types/product';
+import { BASE_URL } from 'util/request';
+
+import { useEffect, useState } from 'react';
+import ProductDetailsLoader from './ProductDetailsLoader';
+import ProductInfoLoader from './ProductInfoLoader';
+
+type UrlParams = {
+  productId: string;
+};
+
 const ProductDetails = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const { productId } = useParams<UrlParams>();
+  const [product, setProduct] = useState<Product>();
+
+  useEffect(() => {
+    setIsLoading(true);
+    axios
+      .get(`${BASE_URL}/products/${productId}`)
+      .then((response) => {
+        setProduct(response.data);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, [productId]);
+
   return (
     <div className="product-details-container">
       <div className="product-details-card">
-
-      <Link to="/products">
-        <div className="goback-container">
-           
+        <Link to="/products">
+          <div className="goback-container">
             <ArrowIcon />
             <h2>VOLTAR</h2>
-        </div>
+          </div>
         </Link>
         <div className="row">
           <div className="col-xl-6">
-            <div className="img-container">
-                <img src="https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/1-big.jpg" alt="Produto" />
-
-            </div>
-            <div className="name-price-container">
-                <h1>Computador Desktop - Intel Core i7</h1>
-              <ProductPrice price={2345.67}/>
-
-
-            </div>
+            {isLoading ? (
+              <ProductDetailsLoader />
+            ) : (
+              <>
+                <div className="img-container">
+                  <img src={product?.imgUrl} alt={product?.name} />
+                </div>
+                <div className="name-price-container">
+                  <h1>{product?.name}</h1>
+                  {product && <ProductPrice price={product?.price} />}
+                </div>
+              </>
+            )}
           </div>
-          <div className="col-xl-6">
-            <div className="description-container">
+          {isLoading ? (
+            <ProductInfoLoader />
+          ) : (
+            <div className="col-xl-6">
+              <div className="description-container">
                 <h1>Descrição do Produto</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent vitae eros eget tellus tristique bibendum.
-                    Donec rutrum sed sem quis venenatis. Proin viverra risus
-                    a eros volutpat tempor. In quis arcu et eros porta
-                    lobortis sit amet eu ex. Ut eget tellus euismod,
-                    lacinia ipsum sed, fermentum metus. Phasellus pretium
-                    nunc sed metus convallis, eget convallis nisl
-                    ultricies. Sed euismod, massa quis aliquam
-                    porttitor, enim lectus pretium quam, vitae
-                    dignissim neque urna sed turpis. Nulla
-                    facilisi. Sed ut erat ligula. Nam
-                    tincidunt vestibulum interdum.
-                    Donec vitae tempor dolor.
-                    Donec auctor, sapien
-                    eget feugiat molestie,
-                    nisl ligula porta
-                    magna, sed
-                    imperdiet
-                    enim
-                    eros
-                    in
-                    massa.
-                    Donec
-                    ut
-                    ex
-                    ac
-
-                    </p>
+                <p>{product?.description}</p>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
