@@ -6,6 +6,7 @@ import Admin from 'pages/Admin';
 import ProductDetails from 'pages/ProductDetails';
 
 const Routes = () => (
+
   <BrowserRouter>
     <Navbar />
     <Switch>
