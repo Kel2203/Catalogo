@@ -1,0 +1,71 @@
+.product-crud-form-card {
+    padding: 20px;
+  }
+  
+  .product-crud-form-title {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -0.015em;
+    color: #263238;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .margin-bottom-30 {
+    margin-bottom: 30px;
+  }
+  
+  .product-crud-inputs-container {
+    margin-bottom: 30px;
+  }
+  
+  .product-crud-inputs-left-container {
+    margin-bottom: 30px;
+  }
+  
+  .product-crud-buttons-container {
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  .product-crud-button {
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+    font-weight: bold;
+   
+  }
+  
+  @media (min-width: 576px) {
+    .product-crud-buttons-container {
+      justify-content: flex-end;
+    }
+  
+    .product-crud-button {
+      margin-left: 30px;
+      width: 270px;
+    }
+  }
+  
+  .product-crud-select__control {
+    border-radius: 10px !important;
+    font-size: 1em;
+    letter-spacing: -0.015em;
+    color: #263238;
+    height: 50px;
+  }
+  
+  .product-crud-select__placeholder {
+    color: #9E9E9E !important;
+  }
+  
+  .product-crud-select__indicator-separator {
+    display: none;
+  }
+  
+  @media (min-width: 992px) {
+    .product-crud-inputs-left-container {
+      margin-bottom: 0;
+    }
+  }
