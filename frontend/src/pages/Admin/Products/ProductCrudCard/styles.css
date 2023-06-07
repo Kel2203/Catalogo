@@ -1,43 +1,79 @@
-.product-crud-card{
-margin-bottom: 30px;
-padding-bottom: 20px;
+.product-crud-card {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
-.product-crud-card-top-container{
-    text-align: center;
-    padding: 16px 0;
-    border-bottom: 1px solid #e1e1e1;
+.product-crud-card-top-container {
+  text-align: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e1e1e1;
 }
-.product-crud-card-top-container img{
-    width: 158px;
-     height: 158px;
- }
-.product-crud-card-bottom-container{
-    padding: 15px 20px 30px 20px; 
+.product-crud-card-top-container img {
+  width: 158px;
+  height: 158px;
 }
-.product-crud-card-bottom-container h6{
- font-size: 18px;
- color: #263238;
+.product-crud-card-bottom-container {
+  padding: 15px 20px 30px 20px;
+}
+.product-crud-card-bottom-container h6 {
+  font-size: 18px;
+  color: #263238;
 }
 
-.product-crud-categories-container{
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
+.product-crud-categories-container {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.product-crud-card-buttons-container{
-    padding: 0 20px;
+.product-crud-card-buttons-container {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-crud-card-button {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.product-crud-card-button-first {
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .product-crud-card {
     display: flex;
     justify-content: space-between;
-}
-.product-crud-card-button{
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-   letter-spacing: -0.015em;
-   border-radius: 10px;
-   height: 40px;
-}
+    padding-bottom: 0;
+  }
 
-.product-crud-card-button-first{
-   margin-right: 10px;
+  .product-crud-card-buttons-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .product-crud-card-button-first {
+    margin-right: 0;
+    margin-top: 22px;
+  }
+  .product-crud-card-button {
+    width: 144px;
+  }
+
+  .product-crud-card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .product-crud-card-top-container {
+    border-bottom: 0;
+    border-rigth: 1px solid #e1e1e1;
+  }
+}
+@media (min-width: 992px){
+    .product-crud-card-button {
+       width: 220px;
+      }
 }

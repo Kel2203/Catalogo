@@ -16,7 +16,7 @@ const ProductCrudCard = ({product}: Props) => {
       <img src={product.imgUrl} alt={product.name} />
       </div>
 
-    <div>
+    <div className='product-crud-card-description'>
     <div className='product-crud-card-bottom-container'>
         <h6>
         {product.name}
