@@ -1,0 +1,35 @@
+.btn-crud-add{
+   width: 100%;
+   height: 50px;
+   border-radius: 10px;
+   font-size: 16px;
+   letter-spacing: -0.015em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.product-filter-container{
+    margin-bottom: 20px;
+    padding:15px;
+}
+
+@media (min-width: 768px) {
+    .product-crud-bar-container{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .btn-crud-add{
+      margin-bottom: 0px;
+        height: 60px;
+    
+     
+     }
+     .product-filter-container{
+        margin-bottom: 0px;
+        margin-left: 20px;
+        flex: 1;
+     }
+      
+}
