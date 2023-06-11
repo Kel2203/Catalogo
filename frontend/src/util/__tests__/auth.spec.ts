@@ -1,4 +1,4 @@
-import exp from 'constants';
+
 import { hasAnyRoles } from 'util/auth';
 import * as TokenModule from 'util/token';
 describe('hasAnyRoles tests', () => {

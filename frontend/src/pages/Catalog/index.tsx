@@ -9,7 +9,7 @@ import { AxiosRequestConfig } from 'axios';
 import CardLoader from './CardLoader';
 
 import './styles.css';
-import { get } from 'http';
+
 
 const Catalog = () => {
   const [page, setPage] = useState<SpringPage<Product>>();
