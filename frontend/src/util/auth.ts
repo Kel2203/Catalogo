@@ -1,4 +1,4 @@
-import jwtDecode from "jwt-decode";
+
 import { getTokenData } from "./token";
 import { Role } from "types/role";
 
