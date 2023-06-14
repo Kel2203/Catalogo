@@ -7,7 +7,7 @@
 .catalog-title-container h1{
     font-size: 1em;
     letter-spacing: -0.015em;
-    color: #263238;
+    color: #fff;
 }
 
 @media (min-width: 576px){

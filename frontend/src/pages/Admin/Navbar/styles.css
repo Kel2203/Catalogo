@@ -8,7 +8,7 @@
 
 .admin-nav-container {
     padding: 10px;
-    background-color: #fff;
+    background-color: #283142;
 }
 
 .admin-nav-item {
@@ -26,8 +26,8 @@
 }
 
 .admin-nav-item.active {
-    background: rgba(64, 123, 255, 0.3);
-    color: #407BFF;
+    background: #1b2531;
+    color: #757be8;
 }
 
 .admin-nav-item p {
@@ -56,7 +56,7 @@
         border-radius: 0;
         font-size: 18px;
         height: 80px;
-        background-color: #fff;
+        background-color: #283142;
         border-bottom: 1px solid #E1E1E1;
         justify-content: flex-start;
         padding-left: 40px;
