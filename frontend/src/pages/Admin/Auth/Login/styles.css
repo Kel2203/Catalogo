@@ -8,7 +8,7 @@
     font-weight: normal;
     text-align: center;
     letter-spacing: -0.015em;
-    color: #263238;
+    color: #f1f1f1;
     text-transform: uppercase;
     margin-top: 70px;
     margin-bottom: 50px;
@@ -17,7 +17,7 @@
   .login-link-recover {
     font-size: 1em;
     letter-spacing: -0.015em;
-    color: #407bff;
+    color: #757aea;
     display: block;
     margin-bottom: 90px;
   }
@@ -28,7 +28,7 @@
     text-align: center;
     letter-spacing: -0.015em;
     text-decoration-line: underline;
-    color: #407bff;
+    color: #757aea;
     margin-left: 10px;
   }
   

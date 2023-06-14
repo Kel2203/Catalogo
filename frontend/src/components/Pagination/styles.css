@@ -12,7 +12,7 @@
     font-size: 18px;
     font-weight: bold;
     letter-spacing: -0.015em;
-    color: #fff;
+    color: #1b2531;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,21 +20,21 @@
   }
   
   .pagination-item.active {
-    background-color: #407bff;
+    background-color: #757aea;
   }
   
   .pagination-link-active {
-    background-color: #407bff;
+    background-color: #757aea;
   }
   
   .arrow-previous {
     transform: rotate(-180deg);
-    color: #407bff;
+    color: #757aea;
   }
   
   .arrow-next {
     margin-left: 10px;
-    color: #407bff;
+    color: #757aea;
   }
   
   .arrow-inactive {
@@ -42,7 +42,7 @@
   }
   
   .arrow-active {
-    color: #407bff;
+    color: #757aea;
   }
   
   .pagination-arrow-container {
