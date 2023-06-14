@@ -20,6 +20,7 @@
   
   .product-filter-name-container input::placeholder {
       color: #9E9E9E;
+      
   }
   
   .product-filter-search-icon {
@@ -29,11 +30,13 @@
   
   .product-filter-bottom-container {
     display: flex;
+    
   }
   
   .product-filter-category-container {
     flex: 1;
     margin-right: 10px;
+    
   }
   
   .btn-product-filter-clear {
@@ -51,10 +54,13 @@
     color: #263238;
     border: none !important;
     border-bottom: 1px solid #E1E1E1 !important;
+    
+    
   }
-  
+ 
   .product-filter-select__placeholder {
     color: #9E9E9E !important;
+    
   }
   
   .product-filter-select__indicator-separator {
