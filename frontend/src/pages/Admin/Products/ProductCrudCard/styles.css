@@ -10,13 +10,14 @@
 .product-crud-card-top-container img {
   width: 158px;
   height: 158px;
+  
 }
 .product-crud-card-bottom-container {
   padding: 15px 20px 30px 20px;
 }
 .product-crud-card-bottom-container h6 {
   font-size: 18px;
-  color: #263238;
+  color: #f1f1f1;
 }
 
 .product-crud-categories-container {
