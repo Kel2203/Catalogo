@@ -1,6 +1,5 @@
 import './styles.css';
 import 'bootstrap/js/src/collapse.js';
-
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
 import history from 'util/history';
@@ -54,6 +53,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="dscatalog-navbar">
+
           <ul className="navbar-nav offset-md-2 main-menu">
             <li>
               <NavLink to="/" activeClassName="active" exact>
