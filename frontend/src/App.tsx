@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Routes from 'routes';
 import { AuthContext, AuthContextData } from 'AuthContext';
 import { ToastContainer } from 'react-toastify';
+
 function App() {
   const [authContextData, setAuthContextData] = useState<AuthContextData>({
     authenticated: false,

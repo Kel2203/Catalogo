@@ -4,11 +4,13 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+  
 }
 
 .admin-nav-container {
     padding: 10px;
     background-color: #283142;
+   
 }
 
 .admin-nav-item {
@@ -23,6 +25,8 @@
     font-weight: bold;
     letter-spacing: -0.015em;
     color: #9E9E9E;
+    margin-bottom: 8px;
+    
 }
 
 .admin-nav-item.active {
