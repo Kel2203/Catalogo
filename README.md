@@ -55,8 +55,56 @@
 
    
   ### Front end
-8. Layout e navegação
-9. 08. Integração com API
+  
+6. Layout e navegação
+   + ReactJS
+     * Criação de projeto
+     * Estrutura do projeto
+     * Componentes
+     * Importações
+   + Layout
+     * HTML
+     * CSS
+     * Flexbox
+     * Bootstrap
+     * Responsividade
+   + Rotas
+     * React Router DOM
+     * Rotas e links
+
+
+
+
+
+   
+   ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/e4a9a19c-1f97-4501-88bf-33fd40e36eb4)
+   ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/4c8ae6c5-eff6-41bb-922d-426f32bd02a8)
+   -----------------------
+   ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/c3fdea14-5baa-43f5-a04d-3c1b810a105f)
+   ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/f6bc86b7-7131-4140-a6c5-92546be8279c)
+
+   7. Integração com API
+      - Props
+      - Parâmetros de URL
+      - Hierarquias (nesting)
+      - Redirecionamentos
+      + Integração com back end
+         * Axios
+         * React Hooks
+         * useState
+         * useEffect
+
+| ROTA  | Página (componente)  |
+| ------------ | ------------ |
+| /  | Home  |
+|  /products |  Catalog |
+| /products/:productId  |  ProductDetails |
+| /admin  |   Admin/Products (redirecionamento) |
+|  /admin/auth/login |  Admin/Auth/Login |
+|  /admin/products |  Admin/Products/List |
+| /admin/products/create  |  Admin/Products/Form |
+| /admin/products/:productId | Admin/Products/Form
+
 09. Autenticação e autorização
 10. CRUD, paginação, filtros
 11. Testes e implantação
