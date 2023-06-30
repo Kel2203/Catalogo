@@ -7,7 +7,7 @@
  ## Back end
 
 
-01. CRUD
+### 01. CRUD
 
 ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/49f028fc-0493-43a1-a35c-51f9fd6384ce)
 
@@ -19,7 +19,18 @@
  - Paginação de dados
  - Associações entre entidades (N-N)
 
-3. Testes automatizados
+### 2. Testes automatizados
+
+ - TDD - Test Driven Development
+ - JUnit
+ - Spring Boot
+ - Repositories
+ - Services
+ - Resources (web)
+ - Integração
+ - Mockito & MockBean
+
+
 4. Validação e segurança
 05. Consultas ao banco de dados
 06. Docker, implantação, CI/CD
