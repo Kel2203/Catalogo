@@ -31,9 +31,21 @@
  - Mockito & MockBean
 
 
-4. Validação e segurança
-05. Consultas ao banco de dados
-06. Docker, implantação, CI/CD
+### 3. Validação e segurança
+ - Modelo de dados de usuários e perfis
+ - Validação com Bean Validation
+ - Autenticação e autorização
++ Spring Security
+    * OAuth 2.0
+    * Token JWT
+    * Autorização de rotas por perfil
+
+### 4. Consultas ao banco de dados
+ - SQL e JPQL
+ - Projeção, restrição, escalares
+ - Spring Data JPA
+
+8. Docker, implantação, CI/CD
 
    
   ### Front end
