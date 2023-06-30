@@ -138,6 +138,23 @@
  - Filtragem de dados
  - Controle de referência com hook useCallback
 
-13. Testes e implantação
+### 10. Testes e implantação
+ + JEST e Testing Library
+   * Testes de funções JS/TS
+   * Execução de testes, modo watch
+   * Bloco describe e suíte de testes
+   * Mock de funções com spyOn
+ + Testes de componentes React
+   * Testes de unidade e de integração
+   * Mock de funções com jest.fn()
+   * Mock de requisições com MSW
+   * Mock do React Router DOM
+   * Simulação de interação do usuário
+   * Fixtures
+ + Inputs de formulário
+   * Submissão de formulário
++ Implantação com CI/CD
+  * VERCEL
+
 
 
