@@ -71,11 +71,6 @@
    + Rotas
      * React Router DOM
      * Rotas e links
-
-
-
-
-
    
    ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/e4a9a19c-1f97-4501-88bf-33fd40e36eb4)
    ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/4c8ae6c5-eff6-41bb-922d-426f32bd02a8)
