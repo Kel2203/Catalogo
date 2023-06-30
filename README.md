@@ -45,7 +45,13 @@
  - Projeção, restrição, escalares
  - Spring Data JPA
 
-8. Docker, implantação, CI/CD
+### 5. Docker, implantação, CI/CD
+  - Imagens e Dockerfile
+  - Instanciação de containers
+ + CI/CD
+   * Clever Cloud
+   * Stage de homologação
+
 
    
   ### Front end
