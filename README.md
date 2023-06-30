@@ -5,8 +5,11 @@
 ### [Project Spring - DSCatalog](https://project-ds-catalog.vercel.app/)
 
  ## Back end
-
-
+ 
+<a href="https://www.java.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/java-14.svg" alt="Java" width="40" height="40"/> </a>
+<a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring" width="40" height="40"/> </a>
+<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker" width="40" height="40"/> </a>
+-----------------------------
 ### 01. CRUD
 
 ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/49f028fc-0493-43a1-a35c-51f9fd6384ce)
@@ -55,7 +58,10 @@
 
    
   ## Front end
-  
+  <a href="https://react.dev/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="react.js" width="40" height="40"/>
+</a>
+<a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="Spring" width="40" height="40"/> </a>
+---------------------
 ### 6. Layout e navegação
    + ReactJS
      * Criação de projeto
