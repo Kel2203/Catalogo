@@ -21,14 +21,14 @@
 
 ### 2. Testes automatizados
 
- - TDD - Test Driven Development
- - JUnit
- - Spring Boot
- - Repositories
- - Services
- - Resources (web)
- - Integração
- - Mockito & MockBean
+ + TDD - Test Driven Development
+   * JUnit
+ + Spring Boot
+   * Repositories
+   * Services
+   * Resources (web)
+   *  Integração
+   *   Mockito & MockBean
 
 
 ### 3. Validação e segurança
