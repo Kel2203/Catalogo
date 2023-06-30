@@ -54,9 +54,9 @@
 
 
    
-  ### Front end
+  ## Front end
   
-6. Layout e navegação
+### 6. Layout e navegação
    + ReactJS
      * Criação de projeto
      * Estrutura do projeto
@@ -83,16 +83,16 @@
    ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/c3fdea14-5baa-43f5-a04d-3c1b810a105f)
    ![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/f6bc86b7-7131-4140-a6c5-92546be8279c)
 
-   7. Integração com API
-      - Props
-      - Parâmetros de URL
-      - Hierarquias (nesting)
-      - Redirecionamentos
-      + Integração com back end
-         * Axios
-         * React Hooks
-         * useState
-         * useEffect
+   ### 7. Integração com API
+   - Props
+   - Parâmetros de URL
+   - Hierarquias (nesting)
+   - Redirecionamentos
++ Integração com back end
+  * Axios
+  * React Hooks
+  * useState
+  * useEffect
 
 | ROTA  | Página (componente)  |
 | ------------ | ------------ |
@@ -105,8 +105,39 @@
 | /admin/products/create  |  Admin/Products/Form |
 | /admin/products/:productId | Admin/Products/Form
 
-09. Autenticação e autorização
-10. CRUD, paginação, filtros
-11. Testes e implantação
+ ### 8. Autenticação e autorização
+   + Formulários
+      * React Hook Form
+      * Validação de formulário, expressões regulares
+      * Mensagens de erro e estilização condicional
+   + Login OAuth2
+      * Interceptors
+      * LocalStorage
+      * Acesso a dados
+      * JSON parse / stringify
+   + Fluxos de autenticação e autorização
+       * Rotas protegidas
+       * Redirecionamentos de login e de autorização
+       * Redirecionamentos especiais para experiência do usuário (UX)
+       * Permissionamento em nível de rotas
+       * Restrição de conteúdo (UI) baseada em perfil de usuário
+
+### 9. CRUD, paginação, filtros
+ - CRUD responsivo
+ - Listagem de dados
+ - Formulário
+ - Inserção, edição e remoção
+ - Comunicação entre componentes com eventos (padrão observer)
+   + React Hook Form
+    * Integração de libs com React Hook Form
+    * React Select
+    * React Currency Input Field
+    * Outras libs
+ - React Pagination
+ - React Toastfy
+ - Filtragem de dados
+ - Controle de referência com hook useCallback
+
+13. Testes e implantação
 
 
