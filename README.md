@@ -1,5 +1,5 @@
 # Catalogo
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Kel2203/Project-DSCatalog/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Kel2203/Catalogo/blob/main/LICENSE)
 
 
 | :placard: Vitrine.Dev |     |
