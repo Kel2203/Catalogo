@@ -1,7 +1,19 @@
 # Project-DSCatalog
-
-
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Kel2203/Project-DSCatalog/blob/main/LICENSE)
+
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Catalogo de Produtos**
+| :label: Tecnologias | java, html, ruby, c# (tecnologias utilizadas)
+| :rocket: URL         | [Project Spring - DSCatalog](https://project-ds-catalog.vercel.app/)
+
+
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+
+## Detalhes do projeto
+
 ### [Project Spring - DSCatalog](https://project-ds-catalog.vercel.app/)
 
  ## Back end
