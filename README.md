@@ -14,8 +14,6 @@
 
 ## Detalhes do projeto
 
-### [Project Spring - DSCatalog](https://project-ds-catalog.vercel.app/)
-
  ## Back end
  
 <a href="https://www.java.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/java-14.svg" alt="Java" width="40" height="40"/> </a>
