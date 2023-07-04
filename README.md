@@ -1,4 +1,4 @@
-# Project-DSCatalog
+# Catalogo
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Kel2203/Project-DSCatalog/blob/main/LICENSE)
 
 
@@ -6,7 +6,7 @@
 | -------------  | --- |
 | :sparkles: Nome        | **Catalogo de Produtos**
 | :label: Tecnologias | java, Spring Boot, React, Bootstrap 
-| :rocket: URL         | [Project Spring - DSCatalog](https://project-ds-catalog.vercel.app/)
+| :rocket: URL         | [Project Spring - Catalogo](https://project-ds-catalog.vercel.app/)
 
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
@@ -23,8 +23,6 @@
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker" width="40" height="40"/> </a>
 -----------------------------
 ### 01. CRUD
-
-![image](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/49f028fc-0493-43a1-a35c-51f9fd6384ce)
 
  - Padrão DTO
  - CRUD completo
