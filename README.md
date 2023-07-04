@@ -10,7 +10,7 @@
 
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+![](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/49f028fc-0493-43a1-a35c-51f9fd6384ce#vitrinedev)
 
 ## Detalhes do projeto
 
