@@ -10,7 +10,7 @@
 
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/49f028fc-0493-43a1-a35c-51f9fd6384ce#vitrinedev)
+![](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/e4a9a19c-1f97-4501-88bf-33fd40e36eb4#vitrinedev)
 
 ## Detalhes do projeto
 
@@ -23,6 +23,7 @@
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker" width="40" height="40"/> </a>
 -----------------------------
 ### 01. CRUD
+![](https://github.com/Kel2203/Project-DSCatalog/assets/78867830/49f028fc-0493-43a1-a35c-51f9fd6384ce)
 
  - Padrão DTO
  - CRUD completo
