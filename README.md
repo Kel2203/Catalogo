@@ -5,7 +5,7 @@
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Catalogo de Produtos**
-| :label: Tecnologias | java, html, ruby, c# (tecnologias utilizadas)
+| :label: Tecnologias | java, Spring Boot, React, Bootstrap 
 | :rocket: URL         | [Project Spring - DSCatalog](https://project-ds-catalog.vercel.app/)
 
 
